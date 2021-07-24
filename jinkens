@@ -19,13 +19,7 @@ agent {
                 sh "mvn --version" 
             }
         }
-        stage('demo1') {
-            steps {
-                echo "Hello, Maven"
-                sh "mvn --version" 
-            }
-        }
-        
+       
     stage('SonarQube Analysis') {
       environment {
         SCANNER_HOME = tool 'sonarqube-4.6.2'
