@@ -19,6 +19,12 @@ agent {
                 sh "mvn --version" 
             }
         }
+        stage('Tool version Check') {
+            steps {
+                echo "Hello, Maven"
+                sh "mvn --version" 
+            }
+        }
         
     stage('SonarQube Analysis') {
       environment {
